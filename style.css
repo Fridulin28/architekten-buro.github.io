@@ -1,15 +1,15 @@
 header{
-	padding-top: 10px;
+	padding-top: 0px;
 	width: 100%;
 	padding-bottom: 10px
 	height: 50px;
 	text-align: center;
-	background: #4D955E;
+	/*background: #4D955E;*/
 	border-radius: 5px;
 	/*opacity: 0.8;*/
 }
 body{
-    /*background: grey;*/
+    background: black;
 }
 .active{
 background-color:red;
@@ -24,6 +24,7 @@ background-color:red;
   float: left;
   color: /*#f2f2f2;*/ #333;
   text-align: center;
+  font-family: Arial;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -39,9 +40,8 @@ background-color:red;
 
 section{
     width: 100%;
-    /*background-color: #a1a1a1;
-    margin: 1px;
-    border: 1em;*/
+
+
 }
 
 aside{
