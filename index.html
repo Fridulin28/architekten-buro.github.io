@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel = "stylesheet" href ="style.css" type = "text/css">
-        <title> Architekten Büro </title>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script language="javascript">
-
-        var time = 5000 //Die Zeit wie lange ein Bild angezeigt wird in ms
-        var bild = new Array();
-        bild[0] = "haus1.jpg"; //Deine Bilder (belibig erweiterbar)
-        bild[1] = "haus2_aside.jpg";
-
-        var narf = "0";
-        function bildwechseln() {
-        document.wechselbild.src = bild[narf];
-        narf++;
-        if (narf == bild.length) {
-        narf = 0;
-        }
-        setTimeout("bildwechseln()",time);
-        }
-
-        </script>
-    </head>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title> Architekten Büro </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="slide.js"></script> -->
+</head>
 
     <body onload="bildwechseln()">
         <header>
-            <img style="border-radius: 20%; width: 300px; height: 200px;" src="haus1.jpg">
+            <p style="float: left; color: white;">
+                <i>
+                    Die Rolle <br />
+                    <br />
+                    des Designers ist <br />
+                    <br />
+                    die eines guten, <br />
+                    <br />
+                    rücksichtsvollen Gastgebers, <br />
+                    <br />
+                    der die Bedürfnisse <br />
+                    <br />
+                    seiner Gäste wertschätzt.
+                </i>
+            </p>
+            <img style="width: 60%; height: 300px;" src="wolkenkratzer.jpg">
+            <p style="float: right; color: white;">
+                <i>
+                    Selbst wenn <br />
+                    <br />
+                    die Situation <br />
+                    <br />
+                    komplex ist, <br />
+                    <br />
+                    ist in der Regel <br />
+                    <br />
+                    die einfachste Lösung <br />
+                    <br />
+                    diejenige, <br/>
+                    <br />
+                    der wir nachgehen sollten.
+                </i>
+            </p>
         </header>
         <div class= "topnav">
-			  <a class="active" href="home.html">Home</a>
+			  <a class="active" href="index.html">Home</a>
 			  <a href="#">Bauwerke</a>
 			  <a href="#">Kontakt</a>
 		</div>
-        <img src="haus1.jpg" border="0" alt=" " name="wechselbild" width="100%">
+        <img src="haus_neu.jpg" border="0" alt=" " name="wechselbild" width="100%">
         <section>
-            <article>
-                Hello
+            <h2 style="color:white; font-family: Arial; text-align:center;">Willkommen auf unserer Webseite!</h2>
+            <p style="color: white; font-family: Arial; text-align: center;">
+                Sie suchen eine Architektenfirma damit <br/>
+                der Wunsch der Eigenheimverwirklichung <br/>
+                in Erfüllung geht?<br/>
+                <br/>
+                Dann sind Sie hier genau richtig!
 
-            </article>
+            </p>
         </section>
+
 
         <aside>
         <!--
