@@ -48,6 +48,11 @@ aside{
     float: right;
 }
 
+#skyline img{
+    width: 60%; 
+    height: 300px;
+}
+
 /*Hier die Bildschirmanpassung fuer die 
     max-width 414 pixel und max height 830 pixel
     min-width 360 pixel und min height 568 pixel
@@ -57,7 +62,7 @@ aside{
 */
 @media screen and (max-height: 830px) and (min-height:568px) and (max-width:414px) and (min-width:360px){
     #skyline img{
-        width: 300px;
+        width: 100%;
         float: left;
     }
     #zitat1{
@@ -79,22 +84,34 @@ aside{
 
 */
 @media screen and (max-height: 655px) and (min-height:560px) and (max-width:320px) and (min-width:270px) {
-    #skyline img {
-        width: 300px;
+     #skyline img{
+        width: 100%;
         float: left;
     }
-
-    #zitat1 {
+    #zitat1{
         display: none;
     }
-
-    #zitat2 {
+    #zitat2{
         display: none;
     }
-
-    .topnav {
+    .topnav{
         width: 100%;
     }
 }
 
+@media screen and (max-height: 1030px) and (min-height:860px) and (max-width:790px) and (min-width:450px) {
+    #skyline img{
+        width: 60%;
+    }
+    .topnav{
+        width: 100%;
+    }
+    #zitat1{
+        float: left;
+        display: none;
+    }
+    #zitat2{
+        float: right;
+    }
+}
 
