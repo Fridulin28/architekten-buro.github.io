@@ -47,3 +47,39 @@ section{
 aside{
     float: right;
 }
+
+/*Hier die Bildschirmanpassung fuer die 
+    max-width 414 pixel und max height 830 pixel
+    min-width 360 pixel und min height 568 pixel
+    Beispiel: iPhoneX/7/8/9 und Plus
+    Pixel 2, Pixel 2XL, Galaxy S5, Moto G4
+
+*/
+@media screen and (max-height: 830px) and (min-height:568px) and (max-width:414px) and (min-width:360px){
+    #skyline img{
+        width: 300px;
+        float: left;
+    }
+    #zitat1{
+        display: none;
+    }
+    #zitat2{
+        display: none;
+    }
+    .topnav{
+        width: 100%;
+    }
+}
+
+/*Hier 
+    max-width 320 pixel
+    max-height 655 pixel
+    min-width 270 pixel
+    min-height 560 pixel
+
+*/
+@media screen and (max-height: 655px) and (min-height:560px) and (max-width:320px) and (min-width:270px) {
+
+}
+
+
