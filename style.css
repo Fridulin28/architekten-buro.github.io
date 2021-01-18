@@ -18,6 +18,7 @@ background-color:red;
   background-color: /*#333;*/#F2F2F2;
   overflow: hidden;
   border-radius: 5px;
+  width: 100%;
   /*opacity: 0.8;*/
 }
 .topnav a {
@@ -40,17 +41,25 @@ background-color:red;
 
 section{
     width: 100%;
-
-
 }
 
 aside{
     float: right;
 }
 
-#skyline img{
+#skyline {
     width: 60%; 
     height: 300px;
+   
+}
+#zitat1 {
+    float: left;
+    margin-right: -10px;
+}
+
+#zitat2 {
+    float: left;
+    
 }
 
 /*Hier die Bildschirmanpassung fuer die 
@@ -60,8 +69,8 @@ aside{
     Pixel 2, Pixel 2XL, Galaxy S5, Moto G4
 
 */
-@media screen and (max-height: 830px) and (min-height:568px) and (max-width:414px) and (min-width:360px){
-    #skyline img{
+@media only screen and (max-width:414px) and (min-width:360px){
+    #skyline {
         width: 100%;
         float: left;
     }
@@ -83,8 +92,8 @@ aside{
     min-height 560 pixel
 
 */
-@media screen and (max-height: 655px) and (min-height:560px) and (max-width:320px) and (min-width:270px) {
-     #skyline img{
+@media only screen (max-width:359px) and (min-width:270px) {
+     #skyline {
         width: 100%;
         float: left;
     }
@@ -95,12 +104,12 @@ aside{
         display: none;
     }
     .topnav{
-        width: 100%;
+       width: 100%;
     }
 }
 
-@media screen and (max-height: 1030px) and (min-height:860px) and (max-width:790px) and (min-width:450px) {
-    #skyline img{
+@media only screen (max-width:790px) and (min-width:415px) {
+    #skyline {
         width: 60%;
     }
     .topnav{
